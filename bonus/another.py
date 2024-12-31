@@ -186,9 +186,23 @@
 # user_term = input("search: ")
 # webbrowser.open("https://www.google.com/search?q=" + user_term)
 
-#random number creator
-import random
-low = int(input("Please enter low range: "))
-high = int(input("Please enter high range: "))
-number = random.randrange(low, high)
-print(number)
+# #random number creator
+# import random
+# low = int(input("Please enter low range: "))
+# high = int(input("Please enter high range: "))
+# number = random.randrange(low, high)
+# print(number)
+
+
+#converter GUI
+import FreeSimpleGUI as fr
+
+label1 = fr.Text("Enter feet")
+label2 = fr.Text("Enter inches")
+input1 = fr.Input()
+input2 = fr.Input()
+convert1 = fr.Button("Convert")
+
+window = fr.Window("Convertor", layout=[[label1, input1], [label2, input2],[convert1]])
+window.read()
+window.close()
