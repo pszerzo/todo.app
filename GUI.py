@@ -40,7 +40,7 @@ while True:
             window["todo"].update(value=values["todos"][0])
         case frs.WIN_CLOSED:
             break #break the loop
-            #exit: finish program
+            #exit: would finish program
 
 window.read()
 window.close()
